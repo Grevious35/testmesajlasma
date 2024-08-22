@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <!-- Primary Meta Tags -->
+    <title>Mesajlaşma Uygulaması  AhmetSelçuk</title>
+
+    <meta name="title" content="Test Mesajlaşma" />
+    <meta name="description" content="." />
+
+
+    <link rel="stylesheet" href="./stylesheets/main.min.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEZHDV7Y1X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KEZHDV7Y1X');
+    </script>
+</head>
+
+<body>
+ 
+    <header>
+        <div class="status-container">
+            <i class="led online"></i>
+            <span class="onlineCount"></span>
+        </div>
+
+        <div class="logo-container">
+            <h1>Mesajlaşma Uygulaması (Test Sürüm) AhmetSelçuk</h1>
+        </div>
+
+        <div class="settingIcon">
+            <img src="./images/settingIcon.svg" alt="" srcset="">
+        </div>
+    </header>
+
+    <div class="typingStatus">
+        <p></p>
+    </div>
+
+    <section class="welcomePage">
+        <h2>Hoşgeldiniz <br> <span></span></h2>
+        <form action="" method="get" id="inputUsername">
+            <input type="text" name="username" pattern="[A-Za-z0-9-\s_]{3,30}" autocomplete="username"
+                placeholder="İsminizi Giriniz." required>
+				</br>
+		<form action="" method="get" id="inputPassword">
+            <input type="password" name="password" pattern="[A-Za-z0-9-\s_]{3,30}" 
+                placeholder="Şifre" required>
+  
+            <input type="submit" value="Gönder">
+        </form>
+        <div class="loader">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </section>
+
+    <main>
+
+        <div class="onlineUsersPage">
+            <h2>Online Kullanıcılar</h2>
+            <div class="onlineUsers-container">
+            </div>
+        </div>
+
+        <div class="chats"> </div>
+        <div class="settingsPage">
+          
+           
+            <button class="scroll">Otomatik Kaydırmayı Kapat</button>
+            <button class="logout">Çıkış Yap</button><br>
+           
+            
+        </div>
+        <form id="msgForm">
+    <input type="text" id="inputmsg" placeholder="mesajını yaz.." minlength="2" maxlength="255" autocomplete="off" required>
+    <input type="file" id="fileInput" accept="image/*">
+    <button type="submit">
+        <img src="./images/paper-plane.png" alt="" srcset="">
+    </button>
+</form>
+    </main>
+
+    <!-- scripts -->
+
+
+
+	
+    <script src="./javascripts/firebase-app.min.js"></script>
+    <script src="./javascripts/firebase-database.min.js"></script>
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/lodash.min.js"></script>
+    <script src="./javascripts/gsap.min.js"></script>
+    <script src="./javascripts/spamFilter.js"></script>
+    <script src="./javascripts/linkify.min.js"></script>
+    <script src="./javascripts/linkify-string.min.js"></script>
+    <script src="./javascripts/modernizr.min.js"></script>
+    <script src="./javascripts/moment.min.js"></script>
+    <script src="./javascripts/moment-timezone-with-data.min.js"></script>
+    <script src="./javascripts/xss.min.js"></script>
+    <script src="./javascripts/countlyFlags.min.js"></script>
+    <script src="./firebaseConfig.js"></script>
+    <script src="./javascripts/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+
+</body>
+
+</html>
